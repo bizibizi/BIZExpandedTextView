@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CQO-WJ-nAS">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bdx-JL-Cdp">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DbM-FJ-WG7" customClass="BIZExpandingTextView">
+                                                <rect key="frame" x="20" y="50" width="560" height="30"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.69803921570000005" green="0.74117647060000003" blue="0.80784313730000001" alpha="0.73507313829787235" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="KTf-vH-SnU"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="DbM-FJ-WG7" firstAttribute="leading" secondItem="Bdx-JL-Cdp" secondAttribute="leading" constant="20" id="LtZ-7L-HTT"/>
+                                            <constraint firstAttribute="trailing" secondItem="DbM-FJ-WG7" secondAttribute="trailing" constant="20" id="uTO-bs-W7b"/>
+                                            <constraint firstItem="DbM-FJ-WG7" firstAttribute="top" secondItem="Bdx-JL-Cdp" secondAttribute="top" constant="50" id="z3f-I1-iA9"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstItem="Bdx-JL-Cdp" firstAttribute="leading" secondItem="CQO-WJ-nAS" secondAttribute="leading" id="5qw-Xz-ngS"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bdx-JL-Cdp" secondAttribute="trailing" id="CVk-zO-4Q2"/>
+                                    <constraint firstItem="Bdx-JL-Cdp" firstAttribute="top" secondItem="CQO-WJ-nAS" secondAttribute="top" id="Wi4-Gg-fuN"/>
+                                    <constraint firstItem="Bdx-JL-Cdp" firstAttribute="centerY" secondItem="CQO-WJ-nAS" secondAttribute="centerY" id="XZK-20-LrS"/>
+                                    <constraint firstAttribute="bottom" secondItem="Bdx-JL-Cdp" secondAttribute="bottom" id="crA-1k-YiP"/>
+                                    <constraint firstItem="Bdx-JL-Cdp" firstAttribute="width" secondItem="CQO-WJ-nAS" secondAttribute="width" id="gQp-xv-3Qk"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.89856825313807531" green="0.97829497907949792" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bdx-JL-Cdp" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="NQq-te-FyJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CQO-WJ-nAS" secondAttribute="bottom" id="Rcr-YL-MXR"/>
+                            <constraint firstItem="CQO-WJ-nAS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WIk-24-Z0E"/>
+                            <constraint firstAttribute="trailing" secondItem="CQO-WJ-nAS" secondAttribute="trailing" id="fUA-no-m93"/>
+                            <constraint firstItem="CQO-WJ-nAS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="oOh-r2-nUs"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="NQq-te-FyJ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="DbM-FJ-WG7" id="TRv-Zh-9Zq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="389"/>
+        </scene>
+    </scenes>
+</document>
