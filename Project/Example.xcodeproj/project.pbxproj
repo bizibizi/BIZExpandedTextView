@@ -7,18 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E18F3371C21B21200F9234E /* BIZExpandingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E18F3361C21B21200F9234E /* BIZExpandingTextView.m */; settings = {ASSET_TAGS = (); }; };
 		7E2236FD1C219941008DB11A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2236FC1C219941008DB11A /* main.m */; };
 		7E2237001C219941008DB11A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2236FF1C219941008DB11A /* AppDelegate.m */; };
 		7E2237031C219941008DB11A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2237021C219941008DB11A /* ViewController.m */; };
 		7E2237061C219941008DB11A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E2237041C219941008DB11A /* Main.storyboard */; };
 		7E2237081C219941008DB11A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E2237071C219941008DB11A /* Assets.xcassets */; };
 		7E22370B1C219941008DB11A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E2237091C219941008DB11A /* LaunchScreen.storyboard */; };
+		7E5B1A411C3B513B0096F8E1 /* BIZExpandingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5B1A401C3B513B0096F8E1 /* BIZExpandingTextView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7E18F3351C21B21200F9234E /* BIZExpandingTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIZExpandingTextView.h; sourceTree = "<group>"; };
-		7E18F3361C21B21200F9234E /* BIZExpandingTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIZExpandingTextView.m; sourceTree = "<group>"; };
 		7E2236F81C219941008DB11A /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E2236FC1C219941008DB11A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7E2236FE1C219941008DB11A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -29,6 +27,8 @@
 		7E2237071C219941008DB11A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E22370A1C219941008DB11A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E22370C1C219941008DB11A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E5B1A3F1C3B513B0096F8E1 /* BIZExpandingTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIZExpandingTextView.h; sourceTree = "<group>"; };
+		7E5B1A401C3B513B0096F8E1 /* BIZExpandingTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIZExpandingTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,20 +42,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7E18F3341C21B21200F9234E /* BIZExpandingTextView */ = {
-			isa = PBXGroup;
-			children = (
-				7E18F3351C21B21200F9234E /* BIZExpandingTextView.h */,
-				7E18F3361C21B21200F9234E /* BIZExpandingTextView.m */,
-			);
-			name = BIZExpandingTextView;
-			path = ../BIZExpandingTextView;
-			sourceTree = "<group>";
-		};
 		7E2236EF1C219941008DB11A = {
 			isa = PBXGroup;
 			children = (
-				7E18F3341C21B21200F9234E /* BIZExpandingTextView */,
+				7E5B1A3E1C3B513B0096F8E1 /* Classes */,
 				7E2236FA1C219941008DB11A /* Example */,
 				7E2236F91C219941008DB11A /* Products */,
 			);
@@ -91,6 +81,16 @@
 				7E2236FC1C219941008DB11A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E5B1A3E1C3B513B0096F8E1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7E5B1A3F1C3B513B0096F8E1 /* BIZExpandingTextView.h */,
+				7E5B1A401C3B513B0096F8E1 /* BIZExpandingTextView.m */,
+			);
+			name = Classes;
+			path = ../Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,7 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E18F3371C21B21200F9234E /* BIZExpandingTextView.m in Sources */,
+				7E5B1A411C3B513B0096F8E1 /* BIZExpandingTextView.m in Sources */,
 				7E2237031C219941008DB11A /* ViewController.m in Sources */,
 				7E2237001C219941008DB11A /* AppDelegate.m in Sources */,
 				7E2236FD1C219941008DB11A /* main.m in Sources */,
