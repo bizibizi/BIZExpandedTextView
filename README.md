@@ -11,7 +11,12 @@ BIZExpandedTextView subclass UITextView, which adds the ability to automatically
 # Installation
 
 ### Manually
- - Copy BIZExpandedTextView folder to your project 
+ - Copy ```BIZExpandedTextView``` folder to your project 
+
+### From CocoaPods:
+```objective-c
+pod 'BIZExpandedTextView' 
+```
 
 
 # Usage
